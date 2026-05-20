@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Learning Python",
+    "author": "Mark Lutz",
+    "year": 2013,
+    "genre": "Computers / Programming Languages / Python"
+  },
+  {
+    "title": "Python Programming: An Introduction to Computer Science",
+    "author": "John Zelle",
+    "year": 2010,
+    "genre": "Computers / Computer Science"
+  },
+  {
+    "title": "Automate the Boring Stuff with Python",
+    "author": "Al Sweigart",
+    "year": 2015,
+    "genre": "Computers / Programming"
+  },
+  {
+    "title": "Python Data Science Handbook",
+    "author": "Jake VanderPlas",
+    "year": 2016,
+    "genre": "Computers / Data Science"
+  },
+  {
+    "title": "Fluent Python",
+    "author": "Luciano Ramalho",
+    "year": 2015,
+    "genre": "Computers / Programming Languages / Python"
+  }
+]

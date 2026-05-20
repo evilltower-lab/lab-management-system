@@ -1,0 +1,122 @@
+2026-05-20 23:28:15,491 | INFO     | library_app | ============================================================
+2026-05-20 23:28:15,492 | INFO     | library_app | Library Management System � Starting up
+2026-05-20 23:28:15,493 | INFO     | library_app | ============================================================
+2026-05-20 23:28:15,493 | INFO     | library_app | Initialising SQLite database at c:\Users\iiira\Documents\Lab Management System\data\library.db
+2026-05-20 23:28:15,552 | INFO     | library_app | Tables created / verified successfully.
+2026-05-20 23:28:15,552 | INFO     | library_app | Seeding sample data�
+2026-05-20 23:28:15,553 | INFO     | library_app | Adding member: Mahmood Al Maawali (Mahmood@library.com)
+2026-05-20 23:28:15,569 | INFO     | library_app | Member added with id=1
+2026-05-20 23:28:15,570 | INFO     | library_app | Adding member: Sultan AL Hamaili (Sultan@library.com)
+2026-05-20 23:28:15,586 | INFO     | library_app | Member added with id=2
+2026-05-20 23:28:15,599 | INFO     | library_app | Adding member: Ibrahim Al Lawati (Ibrahim@library.com)
+2026-05-20 23:28:15,612 | INFO     | library_app | Member added with id=3
+2026-05-20 23:28:15,613 | INFO     | library_app | Adding book: 'Clean Code' by Robert C. Martin
+2026-05-20 23:28:15,639 | INFO     | library_app | Book added with id=1
+2026-05-20 23:28:15,640 | INFO     | library_app | Adding book: 'The Great Gatsby' by F. Scott Fitzgerald
+2026-05-20 23:28:15,656 | INFO     | library_app | Book added with id=2
+2026-05-20 23:28:15,656 | INFO     | library_app | Adding book: 'Thinking, Fast and Slow' by Daniel Kahneman
+2026-05-20 23:28:15,670 | INFO     | library_app | Book added with id=3
+2026-05-20 23:28:15,670 | INFO     | library_app | Adding book: 'Sapiens' by Yuval Noah Harari
+2026-05-20 23:28:15,680 | INFO     | library_app | Book added with id=4
+2026-05-20 23:28:15,684 | INFO     | library_app | Adding book: 'Python Crash Course' by Eric Matthes
+2026-05-20 23:28:15,701 | INFO     | library_app | Book added with id=5
+2026-05-20 23:28:15,703 | INFO     | library_app | Issuing book_id=1 to member_id=1
+2026-05-20 23:28:15,722 | INFO     | library_app | Loan created. Due date: 2026-06-03
+2026-05-20 23:28:15,722 | INFO     | library_app | Seed complete.
+2026-05-20 23:28:15,723 | INFO     | library_app | Fetching all books.
+2026-05-20 23:28:15,757 | INFO     | library_app | Fetching all members.
+2026-05-20 23:28:15,760 | INFO     | library_app | Fetching active loans.
+2026-05-20 23:28:15,762 | INFO     | library_app | Searching available books in genre='Programming'
+2026-05-20 23:28:15,772 | INFO     | library_app | Checking overdue / late-return loans.
+2026-05-20 23:28:15,783 | INFO     | library_app | Exporting books to CSV: c:\Users\iiira\Documents\Lab Management System\exports\books_export.csv
+2026-05-20 23:28:15,787 | INFO     | library_app | Exported 5 rows to c:\Users\iiira\Documents\Lab Management System\exports\books_export.csv
+2026-05-20 23:28:15,788 | INFO     | library_app | Importing CSV from c:\Users\iiira\Documents\Lab Management System\exports\books_export.csv
+2026-05-20 23:28:15,792 | INFO     | library_app | Imported 5 records from CSV.
+2026-05-20 23:28:15,798 | INFO     | library_app | Calling Gutendex API: query='python programming' limit=5
+2026-05-20 23:28:15,804 | DEBUG    | connectionpool | Starting new HTTPS connection (1): gutendex.com:443
+2026-05-20 23:28:27,705 | ERROR    | library_app | API request timed out.
+2026-05-20 23:28:27,714 | ERROR    | library_app | API section failed: HTTPSConnectionPool(host='gutendex.com', port=443): Read timed out. (read timeout=10)
+2026-05-20 23:28:27,752 | INFO     | library_app | Application finished successfully.
+2026-05-20 23:53:54,239 | INFO     | library_app | ============================================================
+2026-05-20 23:53:54,240 | INFO     | library_app | Library Management System � Starting up
+2026-05-20 23:53:54,241 | INFO     | library_app | ============================================================
+2026-05-20 23:53:54,242 | INFO     | library_app | Initialising SQLite database at c:\Users\iiira\Documents\Lab Management System\data\library.db
+2026-05-20 23:53:54,253 | INFO     | library_app | Tables created / verified successfully.
+2026-05-20 23:53:54,253 | INFO     | library_app | Database already seeded, skipping.
+2026-05-20 23:53:54,253 | INFO     | library_app | Fetching all books.
+2026-05-20 23:53:54,273 | INFO     | library_app | Fetching all members.
+2026-05-20 23:53:54,277 | INFO     | library_app | Fetching active loans.
+2026-05-20 23:53:54,283 | INFO     | library_app | Searching available books in genre='Programming'
+2026-05-20 23:53:54,286 | INFO     | library_app | Checking overdue / late-return loans.
+2026-05-20 23:53:54,296 | INFO     | library_app | Exporting books to CSV: c:\Users\iiira\Documents\Lab Management System\exports\books_export.csv
+2026-05-20 23:53:54,299 | INFO     | library_app | Exported 5 rows to c:\Users\iiira\Documents\Lab Management System\exports\books_export.csv
+2026-05-20 23:53:54,299 | INFO     | library_app | Importing CSV from c:\Users\iiira\Documents\Lab Management System\exports\books_export.csv
+2026-05-20 23:53:54,304 | INFO     | library_app | Imported 5 records from CSV.
+2026-05-20 23:53:54,306 | INFO     | library_app | Calling Gutendex API: query='python programming' limit=5
+2026-05-20 23:53:54,317 | DEBUG    | connectionpool | Starting new HTTPS connection (1): gutendex.com:443
+2026-05-20 23:54:05,681 | ERROR    | library_app | API request timed out.
+2026-05-20 23:54:05,709 | ERROR    | library_app | API section failed: HTTPSConnectionPool(host='gutendex.com', port=443): Read timed out. (read timeout=10)
+2026-05-20 23:54:05,774 | INFO     | library_app | Application finished successfully.
+2026-05-20 23:58:56,892 | INFO     | library_app | ============================================================
+2026-05-20 23:58:56,893 | INFO     | library_app | Library Management System � Starting up
+2026-05-20 23:58:56,894 | INFO     | library_app | ============================================================
+2026-05-20 23:58:56,894 | INFO     | library_app | Initialising SQLite database at c:\Users\iiira\Documents\Lab Management System\data\library.db
+2026-05-20 23:58:56,941 | INFO     | library_app | Tables created / verified successfully.
+2026-05-20 23:58:56,942 | INFO     | library_app | Seeding sample data�
+2026-05-20 23:58:56,942 | INFO     | library_app | Adding member: Mahmood Al Maawali (Mahmood@library.com)
+2026-05-20 23:58:56,957 | INFO     | library_app | Member added with id=1
+2026-05-20 23:58:56,957 | INFO     | library_app | Adding member: Sultan AL Hamaili (Sultan@library.com)
+2026-05-20 23:58:56,969 | INFO     | library_app | Member added with id=2
+2026-05-20 23:58:56,970 | INFO     | library_app | Adding member: Ibrahim Al Lawati (Ibrahim@library.com)
+2026-05-20 23:58:56,982 | INFO     | library_app | Member added with id=3
+2026-05-20 23:58:56,983 | INFO     | library_app | Adding book: 'Clean Code' by Robert C. Martin
+2026-05-20 23:58:56,995 | INFO     | library_app | Book added with id=1
+2026-05-20 23:58:56,996 | INFO     | library_app | Adding book: 'The Great Gatsby' by F. Scott Fitzgerald
+2026-05-20 23:58:57,008 | INFO     | library_app | Book added with id=2
+2026-05-20 23:58:57,009 | INFO     | library_app | Adding book: 'Thinking, Fast and Slow' by Daniel Kahneman
+2026-05-20 23:58:57,025 | INFO     | library_app | Book added with id=3
+2026-05-20 23:58:57,025 | INFO     | library_app | Adding book: 'Sapiens' by Yuval Noah Harari
+2026-05-20 23:58:57,040 | INFO     | library_app | Book added with id=4
+2026-05-20 23:58:57,040 | INFO     | library_app | Adding book: 'Python Crash Course' by Eric Matthes
+2026-05-20 23:58:57,052 | INFO     | library_app | Book added with id=5
+2026-05-20 23:58:57,053 | INFO     | library_app | Issuing book_id=1 to member_id=1
+2026-05-20 23:58:57,063 | INFO     | library_app | Loan created. Due date: 2026-06-03
+2026-05-20 23:58:57,065 | INFO     | library_app | Seed complete.
+2026-05-20 23:58:57,067 | INFO     | library_app | Fetching all books.
+2026-05-20 23:58:57,094 | INFO     | library_app | Fetching all members.
+2026-05-20 23:58:57,097 | INFO     | library_app | Fetching active loans.
+2026-05-20 23:58:57,101 | INFO     | library_app | Searching available books in genre='Programming'
+2026-05-20 23:58:57,104 | INFO     | library_app | Checking overdue / late-return loans.
+2026-05-20 23:58:57,110 | INFO     | library_app | Exporting books to CSV: c:\Users\iiira\Documents\Lab Management System\exports\books_export.csv
+2026-05-20 23:58:57,112 | INFO     | library_app | Exported 5 rows to c:\Users\iiira\Documents\Lab Management System\exports\books_export.csv
+2026-05-20 23:58:57,112 | INFO     | library_app | Importing CSV from c:\Users\iiira\Documents\Lab Management System\exports\books_export.csv
+2026-05-20 23:58:57,119 | INFO     | library_app | Imported 5 records from CSV.
+2026-05-20 23:58:57,122 | INFO     | library_app | Calling Gutendex API: query='python programming' limit=5
+2026-05-20 23:58:57,130 | DEBUG    | connectionpool | Starting new HTTPS connection (1): gutendex.com:443
+2026-05-20 23:58:59,650 | DEBUG    | connectionpool | https://gutendex.com:443 "GET /books/?search=python+programming&mime_type=text%2Fhtml HTTP/1.1" 200 52
+2026-05-20 23:58:59,651 | INFO     | library_app | API returned 0 books.
+2026-05-20 23:58:59,657 | INFO     | library_app | Profiling results for fetch_books_from_api:
+         4551 function calls (4470 primitive calls) in 2.530 seconds
+
+   Ordered by: cumulative time
+   List reduced from 652 to 10 due to restriction <10>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    2.529    2.529 c:\Users\iiira\Documents\Lab Management System\library_app.py:319(fetch_books_from_api)
+        1    0.000    0.000    2.529    2.529 C:\Users\iiira\AppData\Local\Programs\Python\Python314\Lib\site-packages\requests\api.py:74(get)
+        1    0.000    0.000    2.529    2.529 C:\Users\iiira\AppData\Local\Programs\Python\Python314\Lib\site-packages\requests\api.py:24(request)
+        1    0.000    0.000    2.528    2.528 C:\Users\iiira\AppData\Local\Programs\Python\Python314\Lib\site-packages\requests\sessions.py:557(request)
+        1    0.000    0.000    2.522    2.522 C:\Users\iiira\AppData\Local\Programs\Python\Python314\Lib\site-packages\requests\sessions.py:752(send)
+        1    0.000    0.000    2.522    2.522 C:\Users\iiira\AppData\Local\Programs\Python\Python314\Lib\site-packages\requests\adapters.py:634(send)
+        1    0.000    0.000    2.521    2.521 C:\Users\iiira\AppData\Local\Programs\Python\Python314\Lib\site-packages\urllib3\connectionpool.py:592(urlopen)
+        1    0.000    0.000    2.517    2.517 C:\Users\iiira\AppData\Local\Programs\Python\Python314\Lib\site-packages\urllib3\connectionpool.py:377(_make_request)
+        1    0.000    0.000    1.746    1.746 C:\Users\iiira\AppData\Local\Programs\Python\Python314\Lib\site-packages\urllib3\connection.py:540(getresponse)
+        1    0.000    0.000    1.746    1.746 C:\Users\iiira\AppData\Local\Programs\Python\Python314\Lib\http\client.py:1406(getresponse)
+
+
+
+2026-05-20 23:58:59,658 | INFO     | library_app | Storing 0 API books in database.
+2026-05-20 23:58:59,658 | INFO     | library_app | API books stored successfully.
+2026-05-20 23:58:59,659 | INFO     | library_app | Saving 0 books as JSON to c:\Users\iiira\Documents\Lab Management System\exports\api_books.json
+2026-05-20 23:58:59,662 | INFO     | library_app | JSON output saved.
+2026-05-20 23:58:59,664 | INFO     | library_app | Application finished successfully.
