@@ -1,5 +1,5 @@
 # Library Management System
- Done by: Mahmood AL Maawali
+ Done by: Mahmood AL Maawali, Sultan Al Haimali
  Topic: Library Management System  
 
 ---
@@ -137,7 +137,7 @@ git add .
 git commit -m "feat: initialise SQLite schema with members and books tables"
 git commit -m "feat: add CRUD functions for members and books"
 git commit -m "feat: add two logical-operator queries"
-git checkout main && git merge feature/database
+git checkout main & git merge feature/database
 
 git checkout -b feature/API
 git commit -m "feat: integrate Open Library API with error handling"
