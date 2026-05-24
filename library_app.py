@@ -4,9 +4,11 @@
 import logging
 import os
 
+# Create a logs directory if it doesn't exist
 LOG_DIR = os.path.join(os.path.dirname(__file__), "logs")
 os.makedirs(LOG_DIR, exist_ok=True)
 
+# Configure logging to file and console with timestamps and log levels
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s | %(levelname)-8s | %(module)s | %(message)s",
@@ -15,7 +17,7 @@ logging.basicConfig(
         logging.StreamHandler(),          # also print to console
     ],
 )
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(__name__) # module-level logger for this script
 
 # ─────────────────────────────────────────────
 # STANDARD IMPORTS
