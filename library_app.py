@@ -316,6 +316,8 @@ def import_csv_to_dataframe(filepath: str = CSV_EXPORT) -> pd.DataFrame:
 #  PART E – API INTEGRATION (Open Library)
 # ══════════════════════════════════════════════
 
+# For demonstration, we'll use the Gutendex API (Project Gutenberg) as a fallback if Open Library is unavailable.
+# Note: Open Library's search API is more complex and may require additional parameters for pagination, but Gutendex provides a simpler interface for this exercise.
 def fetch_books_from_api(query: str, limit: int = 5) -> list[dict]:
     """
     Fetch books from the Gutendex (Project Gutenberg) public API.
@@ -355,7 +357,7 @@ def fetch_books_from_api(query: str, limit: int = 5) -> list[dict]:
     logger.info("API returned %d books.", len(books))
     return books
 
-
+# Store api books in the database, skipping duplicates based on title and author. This is a simple approach; in a real app, you might want a more robust deduplication strategy.
 def store_api_books(conn: sqlite3.Connection, books: list[dict]) -> None:
     """Insert API-fetched books into the local database (skip duplicates)."""
     logger.info("Storing %d API books in database.", len(books))
