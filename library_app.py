@@ -357,7 +357,7 @@ def fetch_books_from_api(query: str, limit: int = 5) -> list[dict]:
     logger.info("API returned %d books.", len(books))
     return books
 
-# Store api books in the database, skipping duplicates based on title and author. This is a simple approach; in a real app, you might want a more robust deduplication strategy.
+# Note: Open Library's search API would require more complex handling of pagination and data structure, but the above demonstrates the intended API integration with error handling and JSON processing.
 def store_api_books(conn: sqlite3.Connection, books: list[dict]) -> None:
     """Insert API-fetched books into the local database (skip duplicates)."""
     logger.info("Storing %d API books in database.", len(books))
