@@ -47,6 +47,10 @@ os.makedirs(os.path.dirname(CSV_EXPORT), exist_ok=True)
 #  PART B – SQLITE DATABASE DESIGN
 # ══════════════════════════════════════════════
 
+# Database schema design:
+# 1. members (member_id PK, full_name, email UNIQUE, joined_date, is_active)
+# 2. books   (book_id PK, title, author, genre, year, total_copies, available)
+# 3. loans   (loan_id PK, member_id FK, book_id FK, loan_date, due_date, return_date)
 def init_db() -> sqlite3.Connection:
     """Create / connect to the SQLite database and initialise tables."""
     logger.info("Initialising SQLite database at %s", DB_PATH)
@@ -54,7 +58,7 @@ def init_db() -> sqlite3.Connection:
     conn.row_factory = sqlite3.Row        # allows dict-like column access
     cur = conn.cursor()
 
-    # Table 1 – Members (Primary Key: member_id)
+    # Creating Table 1 – Members (Primary Key: member_id)
     cur.execute("""
         CREATE TABLE IF NOT EXISTS members (
             member_id   INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -65,7 +69,7 @@ def init_db() -> sqlite3.Connection:
         )
     """)
 
-    # Table 2 – Books (Primary Key: book_id)
+    # Creating Table 2 – Books (Primary Key: book_id)
     cur.execute("""
         CREATE TABLE IF NOT EXISTS books (
             book_id     INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -78,7 +82,7 @@ def init_db() -> sqlite3.Connection:
         )
     """)
 
-    # Table 3 – Loans (Foreign Keys → members & books)
+    # Creating Table 3 – Loans (Foreign Keys → members & books)
     cur.execute("""
         CREATE TABLE IF NOT EXISTS loans (
             loan_id     INTEGER PRIMARY KEY AUTOINCREMENT,
